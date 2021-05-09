@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Air Quality Index
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Coding challenge for Proximity labs.
 
-## Available Scripts
+## Live Url
+Air Quality Index - 
 
-In the project directory, you can run:
+## Requirements
 
-### `yarn start`
+| Index |                         Requirement                         |
+| ----- | ----------------------------------------------------------- |
+| 1     | Live City wise AQI chart                                    |
+| 2     | AQI mapping with different colors for different categories  |
+| 3     | AQI value upto 2 decimal values                             |
+| 4     | Comparison of AQI dara with different cities                |
+| 5     | Magnified chart for Live AQI index for one city             |
+| 6     | Add UI enhancements e.g. SparkLines                         |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
+1. The live update of AQ index of cities from recent updates
+2. AQI of different cities are compared 
+3. View the magnified data for selected city
+4. View the historic data using SparkLines chart
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Description
+This project has following views
+1. Table view - To view live AQ data of all cities (clickable)
+2. Bar chart View - To view comparison between cities with AQI reference bar (clickable)
+3. SparkLines view - To view live and hestoric data of one city
+4. Guage chart view - To view live AQ index of selected city
+5. AQ index Table - Table with AQI guide
 
-### `yarn test`
+#### Table view - 
+It contains 4 columns,
+1. City Name
+2. AQ index value (upto 2 decimal)
+3. Last Updated on
+4. SparkLines chart with live and historical data
+User can click on any row to select perticular city, to view AQ index of that city in magnified chart i.e. in Guage chart and SparkLines chart.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Bar chart View - 
+To compare AQ index between cities.
+User can click on any bar in barchar to select perticular city.
+It has AQI reference bar on leftmost side.
+On mouse hover user will get more information.
 
-### `yarn build`
+#### SparkLines view - 
+To view live and hestoric data of one city.
+It is present in Table as well as in city detail magnified view.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Guage chart view -
+To view live AQ index of selected city
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### AQ index Table - 
+Table with AQI guide for understanding colors and it's value referance
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Libraries used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Index |    Library name    |  Version  |
+| ----- | ------------------ | --------- |
+| 1     | @material-ui/core  | ^4.11.4   |
+| 2     | @material-ui/icons | ^4.11.2   |
+| 3     | lodash             | ^4.17.21  |
+| 4     | react-gauge-chart  | ^0.3.0    |
+| 5     | react-sparklines   | ^1.7.0    |
+| 6     | recharts           | ^2.0.9    |.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Reason to used this lib -
+Open source
+Strong community support
