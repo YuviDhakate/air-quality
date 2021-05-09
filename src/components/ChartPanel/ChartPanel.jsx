@@ -11,8 +11,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     IconButton: {
-        display: "inline-block",
-        float: "right"
+        display: 'inline-block',
+        float: 'right'
     }
 });
 
@@ -29,13 +29,13 @@ const ChartsPanel = (prop) => {
 
     return (<Grid container spacing={1}>
         <Grid item xs={12} sm={8}>
-            <IconButton aria-label="delete" className={classes.IconButton}>
+            <IconButton aria-label='delete' className={classes.IconButton}>
                 <CancelIcon onClick={() => { selectCity('') }} />
             </IconButton>
-            <Typography variant='h6' align="center" >
+            <Typography variant='h6' align='center' >
                 {selectedCity.city}
             </Typography>
-            <GaugeChart id="gauge-chart"
+            <GaugeChart id='gauge-chart'
                 animate={true}
                 nrOfLevels={10}
                 colors={guageChartColors}
@@ -47,22 +47,22 @@ const ChartsPanel = (prop) => {
             />
         </Grid>
         <Grid item xs={12} sm={4}>
-            <Typography variant='h6' align="center" >
+            <Typography variant='h6' align='center' >
                 Select City &nbsp;
                 <Select native
                     value={selectedCity.city}
                     onChange={handleChange}
-                    variant={"outlined"} >
-                    <option value="">Compare all cities</option>)
+                    variant={'outlined'} >
+                    <option value=''>Compare all cities</option>)
                     {data.map((item) => <option key={item.city} value={item.city}>{item.city}</option>)}
                 </Select>
             </Typography>
             <br />
             <Paper>
-                <Typography variant='h6' align="center" >
+                <Typography variant='h6' align='center' >
                     Air Quality Index is <br /><strong style={{ color: color }}>{name}</strong>
                 </Typography>
-                <Typography align="center" >
+                <Typography align='center' >
                     As per Air Quality Standerds
             </Typography>
                 <AqiGuid />

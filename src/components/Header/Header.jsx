@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { APP } from '../../config/app.config';
 
 const Header = () => {

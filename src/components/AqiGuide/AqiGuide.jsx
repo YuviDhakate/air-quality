@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { APP, CAT_COLOR } from "../../config/app.config"
-import { getCategory } from "../../util/util"
+import { APP, CAT_COLOR } from '../../config/app.config'
+import { getCategory } from '../../util/util'
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
 
 
@@ -19,7 +19,7 @@ const AqiGuide = () => {
     const classes = useStyles();
     return (
         <TableContainer>
-            <Table size="small" className={classes.table}>
+            <Table size='small' className={classes.table}>
                 <TableHead style={{ background: CAT_COLOR.DEFAULT }}>
                     <TableRow>
                         <TableCell className={classes.tableCell}>Air Quality Index</TableCell>

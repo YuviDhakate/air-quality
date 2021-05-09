@@ -8,9 +8,9 @@ import ChartsPanel from '../../components/ChartPanel/ChartPanel'
 import Layout from '../../components/Layout/Layout'
 import CityAqiCompare from '../../components/CityAqiCompare/CityAqiCompare'
 
-
+const DEFAULT_DATA = [{ 'city': 'Pune', 'aqi': 0, time: 0 }]
 const HomePage = () => {
-    const [data, setData] = useState([{ 'city': 'Bengaluru', 'aqi': 190.09421376612406, 'time': '2021-05-09T06:16:46.880Z' }, { 'city': 'Bhubaneswar', 'aqi': 98.63801940450601, 'time': '2021-05-09T06:16:46.880Z' }, { 'city': 'Chandigarh', 'aqi': 46.955775392841595, 'time': '2021-05-09T06:16:48.878Z' }, { 'city': 'Chennai', 'aqi': 141.57245634640066, 'time': '2021-05-09T06:16:48.878Z' }, { 'city': 'Delhi', 'aqi': 299.4583968345511, 'time': '2021-05-09T06:16:48.878Z' }, { 'city': 'Hyderabad', 'aqi': 203.0147219550929, 'time': '2021-05-09T06:16:48.878Z' }, { 'city': 'Indore', 'aqi': 52.23410324928509, 'time': '2021-05-09T06:16:46.880Z' }, { 'city': 'Jaipur', 'aqi': 141.86280721041777, 'time': '2021-05-09T06:16:48.878Z' }, { 'city': 'Kolkata', 'aqi': 198.00417746742093, 'time': '2021-05-09T06:16:46.880Z' }, { 'city': 'Lucknow', 'aqi': 78.33295960616987, 'time': '2021-05-09T06:16:48.878Z' }, { 'city': 'Mumbai', 'aqi': 180.19098368581334, 'time': '2021-05-09T06:16:48.878Z' }, { 'city': 'Pune', 'aqi': 223.98125449982362, 'time': '2021-05-09T06:16:46.880Z' }]);
+    const [data, setData] = useState(DEFAULT_DATA);
     const [selectedCity, setSelectedCity] = useState({})
     const [clickedCity, setClickedCity] = useState('')
     const [chartData, setChartData] = useState({})

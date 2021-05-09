@@ -1,12 +1,12 @@
 
 export const CAT_COLOR = {
-    GOOD: "#55a84f",
-    SATISFACTORY: "#a3c853",
-    MODERATE: "#fff833",
-    POOR: "#f29c33",
-    VERY_POOR: "#e93f33",
-    SEVERE: "#af2d24",
-    DEFAULT: "#aaaaaa"
+    GOOD: '#55a84f',
+    SATISFACTORY: '#a3c853',
+    MODERATE: '#fff833',
+    POOR: '#f29c33',
+    VERY_POOR: '#e93f33',
+    SEVERE: '#af2d24',
+    DEFAULT: '#aaaaaa'
 }
 
 
