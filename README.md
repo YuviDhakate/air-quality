@@ -3,7 +3,14 @@
 Coding challenge for Proximity labs.
 
 ## Live Url
-Air Quality Index - 
+- [Air Quality Index](https://airqualityindex-yuvi.web.app/)
+
+## Referance Images
+- [Live City wise AQI chart and comparison of AQI](1.jpg)
+
+- [Magnified chart for Live AQI index for one city](2.jpg)
+
+- [Update/change city option](3.jpg)
 
 ## Requirements
 
@@ -66,6 +73,6 @@ Table with AQI guide for understanding colors and it's value referance
 | 5     | react-sparklines   | ^1.7.0    |
 | 6     | recharts           | ^2.0.9    |.
 
-Reason to used this lib -
-Open source
-Strong community support
+Reason to used this lib 
+1. Open source
+2. Strong community support
